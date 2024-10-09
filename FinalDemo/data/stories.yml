@@ -1,0 +1,14 @@
+version: "3.1"
+
+stories:
+- story: greet and ask anything
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: ask_anything
+  - action: action_generate_gpt_response
+
+- story: nutrition advice
+  steps:
+  - intent: ask_nutrition_advice
+  - action: action_generate_gpt_response

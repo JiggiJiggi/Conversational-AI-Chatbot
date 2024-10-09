@@ -1,0 +1,32 @@
+version: "3.1"
+
+nlu:
+- intent: greet
+  examples: |
+    - Hi
+    - Hello
+    - Hey
+
+- intent: goodbye
+  examples: |
+    - Bye
+    - Goodbye
+    - See you later
+
+- intent: ask_exercise_routine
+  examples: |
+    - Can you suggest a workout plan?
+    - What’s a good exercise routine for beginners?
+
+- intent: ask_nutrition_advice
+  examples: |
+    - What should I eat to lose weight?
+    - Can you suggest a diet for muscle gain?
+
+- intent: ask_anything
+  examples: |
+    - What’s the best exercise to lose belly fat?
+    - Can you help me with a workout plan?
+    - How many calories should I eat to maintain my weight?
+    - What’s the difference between HIIT and steady-state cardio?
+    

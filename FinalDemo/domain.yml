@@ -1,0 +1,25 @@
+version: "3.1"
+
+intents:
+  - greet
+  - goodbye
+  - ask_exercise_routine
+  - ask_nutrition_advice
+  - ask_supplements
+  - ask_workout_tips
+  - ask_fitness_goal
+  - ask_anything  # This will be routed to the GPT model
+
+responses:
+  utter_greet:
+  - text: "Hello! How can I help you with your fitness goals today?"
+
+  utter_goodbye:
+  - text: "Goodbye! Stay healthy and keep exercising!"
+
+actions:
+  - action_generate_gpt_response
+
+session_config:
+  session_expiration_time: 60
+  carry_over_slots_to_new_session: true
